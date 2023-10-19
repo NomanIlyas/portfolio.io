@@ -1,52 +1,53 @@
 {
-  "name": "cleanfolio",
+  "name": "dizme-vue",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rajshekhar26.github.io/cleanfolio",
-  "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "gh-pages": "^3.2.3",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "uniqid": "^5.4.0",
-    "web-vitals": "^1.0.1",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^2.3.2"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "deploy": "gh-pages -d build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "isotope-layout": "^3.0.6",
+    "swiper": "^8.1.6",
+    "vanilla-tilt": "^1.7.2",
+    "vue": "^3.2.13",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-js-counter": "^1.0.3",
+    "vue-number-animation": "^1.1.2",
+    "vue-router": "^4.0.3",
+    "vue-visibility-sensor": "^0.3.0",
+    "wowjs": "^1.1.3"
   },
   "devDependencies": {
-  }
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
 }
